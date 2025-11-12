@@ -22,11 +22,11 @@ export const IconSection = ({ items, backgroundColor = "light" }: IconSectionPro
             const Icon = item.icon;
             return (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
                   <Icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                <h3 className="text-xl font-semibold font-main text-foreground mb-3">{item.title}</h3>
+                <p className="text-muted-foreground font-secondary leading-relaxed">{item.description}</p>
               </div>
             );
           })}

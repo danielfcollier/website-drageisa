@@ -30,8 +30,8 @@ export const AlternatingContent = ({ items }: AlternatingContentProps) => {
                   />
                 </div>
                 <div className={isEven ? "" : "md:col-start-1 md:row-start-1"}>
-                  <h3 className="text-3xl font-bold text-foreground mb-6">{item.title}</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">{item.description}</p>
+                  <h3 className="text-3xl font-bold font-main text-foreground mb-6">{item.title}</h3>
+                  <p className="text-lg text-muted-foreground font-secondary leading-relaxed">{item.description}</p>
                 </div>
               </div>
             );

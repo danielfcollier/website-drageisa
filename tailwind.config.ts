@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'brand': ['Cookie', 'cursive'],
+        'main': ['Open Sans', 'sans-serif'],
+        'secondary': ['Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,6 +55,7 @@ export default {
         "warm-cream": "hsl(var(--warm-cream))",
         "soft-rose": "hsl(var(--soft-rose))",
         "deep-teal": "hsl(var(--deep-teal))",
+        "cta-button": "hsl(var(--cta-button))",
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",

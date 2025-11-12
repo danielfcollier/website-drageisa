@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { ClinicGallery } from "@/components/ClinicGallery";
 import { LocationSection } from "@/components/LocationSection";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Clock, Stethoscope, Calendar, Award, BookOpen, GraduationCap } from "lucide-react";
 import services1 from "@/assets/services-1.jpg";
 import services2 from "@/assets/services-2.jpg";
@@ -20,49 +21,49 @@ const Index = () => {
       
       <FeatureMatrix 
         id="sobre"
-        title="Cuidado Integral à Saúde da Mulher"
-        subtitle="Uma abordagem completa que respeita e valoriza cada fase da vida feminina"
+        title="Visão Sistêmica em Saúde"
+        subtitle="Cuidado Terapêutico e Transpessoal da Mulher"
         features={[
           {
             icon: Heart,
-            title: "Ginecologia Humanizada",
-            description: "Atendimento centrado nas suas necessidades, com empatia, escuta ativa e respeito ao seu tempo e suas escolhas."
+            title: "Feminilidade Integrativa",
+            description: "Honrando e integrando todos os aspectos da feminilidade em uma abordagem holística e respeitosa."
           },
           {
             icon: Shield,
-            title: "Ambiente Seguro",
-            description: "Um espaço acolhedor e confidencial onde você pode se sentir confortável para compartilhar suas preocupações."
+            title: "Fecundação e Contracepção",
+            description: "Orientação consciente e individualizada sobre planejamento familiar, respeitando suas escolhas e momento de vida."
           },
           {
             icon: Users,
-            title: "Atendimento Personalizado",
-            description: "Cada mulher é única. Por isso, criamos planos de cuidado individualizados que respeitam sua história e objetivos."
+            title: "Sexualidade Consciente",
+            description: "Apoio para viver sua sexualidade de forma plena, saudável e alinhada com seus valores e desejos."
           },
           {
             icon: Clock,
-            title: "Tempo de Qualidade",
-            description: "Consultas sem pressa, com tempo adequado para conversarmos sobre todas as suas dúvidas e preocupações."
+            title: "Saúde Funcional e Plena",
+            description: "Cuidado integral que vai além dos sintomas, buscando o equilíbrio e a vitalidade em todas as dimensões."
           }
         ]}
-        paragraph="Acredito em uma medicina que vai além do diagnóstico, que compreende a mulher em sua totalidade - corpo, mente e emoções. Juntas, construímos um caminho de saúde e bem-estar."
+        paragraph="Meu compromisso é oferecer um cuidado ampliado em saúde, priorizando a boa relação médica-paciente, a adoção de terapêuticas individualizadas e naturais, sempre que possível, respeitando preferências e autonomia."
       />
       
       <IconSection 
         items={[
           {
-            icon: Stethoscope,
-            title: "Consultas de Rotina",
-            description: "Exames preventivos, check-ups anuais e acompanhamento contínuo da sua saúde ginecológica."
-          },
-          {
             icon: Heart,
-            title: "Planejamento Familiar",
-            description: "Orientação sobre métodos contraceptivos e planejamento reprodutivo respeitando suas escolhas."
+            title: "Conexão da Feminilidade",
+            description: "Reconectando você com sua essência feminina, seus ciclos naturais e seu poder interior."
           },
           {
-            icon: Calendar,
-            title: "Pré-natal Humanizado",
-            description: "Acompanhamento completo durante a gestação, valorizando seus desejos e respeitando seu plano de parto."
+            icon: Shield,
+            title: "Restauração do Equilíbrio",
+            description: "Recuperando o equilíbrio hormonal, emocional e energético através de abordagens integrativas."
+          },
+          {
+            icon: Stethoscope,
+            title: "Saúde Celular e Bioquímica",
+            description: "Cuidado aprofundado da saúde em nível celular, otimizando seu funcionamento bioquímico."
           }
         ]}
       />
@@ -71,34 +72,34 @@ const Index = () => {
         items={[
           {
             image: services1,
-            title: "Escuta Ativa e Empatia",
-            description: "Mais do que uma consulta médica, oferecemos um espaço de acolhimento onde você é ouvida com atenção e suas preocupações são validadas. Cada sintoma, cada dúvida é importante e merece ser compreendida dentro do contexto da sua vida."
+            title: "A Busca por uma Medicina Humana",
+            description: "Quando eu estava na faculdade, foi muito comum ouvir de amigas e familiares, em tom de desabafo, o pedido por uma medicina mais humana..."
           },
           {
             image: services2,
-            title: "Cuidado Baseado em Evidências",
-            description: "Aliamos o conhecimento científico mais atual com a sensibilidade necessária para entender que cada corpo é único. Nosso compromisso é oferecer o melhor da medicina moderna com um toque humano e personalizado."
+            title: "Vínculo e Integralidade",
+            description: "...com ênfase no vínculo médica-paciente, com senso crítico, que enxergasse a pessoa em sua integralidade e não focasse apenas no conjunto de sintomas que viesse apresentando naquele momento."
           }
         ]}
       />
       
       <BioSection 
-        name="Dra. Maria Silva"
+        name="Dra. Geisa Nery"
         credentials={[
           {
-            icon: GraduationCap,
-            title: "Formação Acadêmica",
-            description: "Graduada em Medicina pela Universidade de São Paulo (USP). Residência em Ginecologia e Obstetrícia pela mesma instituição."
+            icon: Stethoscope,
+            title: "Médica, Ginecologista e Terapeuta",
+            description: "Dedicada ao cuidado integral da saúde feminina com abordagem humanizada e terapêutica."
           },
           {
             icon: Award,
-            title: "Especializações",
-            description: "Pós-graduação em Ginecologia Humanizada e Medicina Integrativa. Formação em Violência Obstétrica e Direitos da Mulher."
+            title: "Especialista em Psicologia Transpessoal",
+            description: "Formação especializada que integra aspectos emocionais e espirituais ao cuidado médico."
           },
           {
-            icon: BookOpen,
-            title: "Experiência",
-            description: "Mais de 15 anos dedicados ao cuidado da saúde feminina, com atuação em hospitais de referência e consultório particular."
+            icon: GraduationCap,
+            title: "Pós-Grad. em Fisiologia e Equilíbrio Hormonal",
+            description: "Expertise avançada em saúde hormonal e equilíbrio fisiológico da mulher."
           }
         ]}
       />
@@ -106,42 +107,60 @@ const Index = () => {
       <Testimonials 
         testimonials={[
           {
-            name: "Ana Paula S.",
-            text: "A Dra. Maria mudou completamente minha percepção sobre consultas ginecológicas. Pela primeira vez me senti realmente ouvida e respeitada. Ela entende que somos muito mais do que sintomas.",
+            name: "Adriana Casaroto",
+            role: "Psicóloga Sênior",
+            text: "Profissional com visão integral do ser humano. Postura sensível e tecnicamente sempre atualizada ao que há de melhor, respeitando o perfil de cada cliente. Encaminho clientes, colegas e amigas - estão em boas mãos e gigante coração!"
           },
           {
-            name: "Juliana M.",
-            text: "Acompanhei minha gestação com a Dra. Maria e foi uma experiência transformadora. Ela respeitou todas as minhas escolhas e me deu segurança em cada etapa. Gratidão eterna!",
+            name: "Fábia Lombardi",
+            role: "Terapeuta Integrativa",
+            text: "Sinto muita confiança e segurança no trabalho e na assertividade da Geisa, o que me faz ficar muito consciente e ao mesmo tempo entregue aos seus cuidados."
           }
         ]}
       />
       
       <FeatureMatrix 
-        title="Por Que Escolher uma Ginecologia Humanizada?"
-        subtitle="Entenda a diferença de um atendimento que coloca você no centro do cuidado"
+        title="Como Funciona"
+        subtitle=""
         features={[
           {
-            icon: Heart,
-            title: "Respeito à Autonomia",
-            description: "Suas decisões sobre seu corpo são sempre respeitadas. Fornecemos informações claras para que você possa fazer escolhas conscientes."
+            icon: Clock,
+            title: "Consultas: 45 ou 90 min.",
+            description: "Escolha o tempo necessário para um atendimento completo e sem pressa."
           },
           {
-            icon: Shield,
-            title: "Ambiente Livre de Julgamentos",
-            description: "Um espaço seguro onde você pode falar abertamente sobre sua sexualidade, ciclo menstrual e saúde sem receio de ser julgada."
+            icon: Stethoscope,
+            title: "Diagnóstico Sistêmico",
+            description: "Avaliação completa que considera todos os aspectos da sua saúde e bem-estar."
+          },
+          {
+            icon: Heart,
+            title: "Consultas Particulares",
+            description: "*Não aceita Planos de Saúde. Investimento consciente na sua saúde integral."
           },
           {
             icon: Users,
-            title: "Parceria no Cuidado",
-            description: "Trabalhamos juntas na construção do seu bem-estar. Você não é apenas paciente, é protagonista da sua saúde."
-          },
-          {
-            icon: Clock,
-            title: "Tempo e Atenção",
-            description: "Consultas com duração adequada para abordarmos todos os aspectos da sua saúde, sem pressa ou superficialidade."
+            title: "Opção de Telemedicina",
+            description: "Atendimento online seguro e conveniente, mantendo a mesma qualidade do presencial."
           }
         ]}
       />
+      
+      <section className="py-12 bg-warm-cream">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-cta-button hover:opacity-90 transition-opacity text-lg text-foreground font-secondary font-medium"
+            >
+              <a href="https://api.whatsapp.com/send?phone=554899623819&text=Ol%C3%A1,%20estou%20interessada%20em%20agendar%20uma%20consulta%20com%20a%20Dra.%20Geisa.%20Me%20chamo%20&source=&data=" target="_blank" rel="noopener noreferrer">
+                Agendar Consulta
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
       
       <ClinicGallery />
       <LocationSection />

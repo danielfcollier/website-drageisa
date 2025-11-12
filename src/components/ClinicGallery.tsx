@@ -13,10 +13,10 @@ export const ClinicGallery = () => {
     <section className="py-20 bg-warm-cream">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nossa Clínica
+          <h2 className="text-3xl md:text-4xl font-bold font-main text-foreground mb-4">
+            O Consultório
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg font-secondary text-muted-foreground">
             Um ambiente acolhedor e moderno para o seu conforto
           </p>
         </div>

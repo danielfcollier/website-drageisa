@@ -19,8 +19,10 @@ export const FeatureMatrix = ({ title, subtitle, features, paragraph, id }: Feat
     <section id={id} className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{title}</h2>
-          <p className="text-lg text-muted-foreground">{subtitle}</p>
+          <h2 className="text-3xl md:text-4xl font-bold font-main text-foreground mb-4">{title}</h2>
+          {subtitle && (
+            <p className="text-lg font-secondary text-muted-foreground">{subtitle}</p>
+          )}
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
@@ -31,11 +33,11 @@ export const FeatureMatrix = ({ title, subtitle, features, paragraph, id }: Feat
                 key={index}
                 className="bg-card rounded-xl p-8 shadow-soft hover:shadow-medium transition-shadow border border-border"
               >
-                <div className="w-14 h-14 rounded-full bg-soft-rose flex items-center justify-center mb-4">
-                  <Icon className="w-7 h-7 text-primary" />
+                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4">
+                  <Icon className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold font-main text-foreground mb-3">{feature.title}</h3>
+                <p className="text-muted-foreground font-secondary leading-relaxed">{feature.description}</p>
               </div>
             );
           })}
@@ -43,7 +45,7 @@ export const FeatureMatrix = ({ title, subtitle, features, paragraph, id }: Feat
         
         {paragraph && (
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg text-muted-foreground leading-relaxed">{paragraph}</p>
+            <p className="text-lg text-foreground font-secondary leading-relaxed">{paragraph}</p>
           </div>
         )}
       </div>
