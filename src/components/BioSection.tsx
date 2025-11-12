@@ -17,7 +17,7 @@ export const BioSection = ({ name, credentials }: BioSectionProps) => {
     <section className="py-20 bg-warm-cream">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-          <div className="text-center md:text-left">
+          <div className="text-center">
             <img 
               src={doctorPhoto}
               alt={name}

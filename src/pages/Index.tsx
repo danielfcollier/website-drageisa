@@ -23,6 +23,7 @@ const Index = () => {
         id="sobre"
         title="Visão Sistêmica em Saúde"
         subtitle="Cuidado Terapêutico e Transpessoal da Mulher"
+        bgColor="bg-background"
         features={[
           {
             icon: Heart,
@@ -120,8 +121,10 @@ const Index = () => {
       />
       
       <FeatureMatrix 
+        id="como-funciona"
         title="Como Funciona"
         subtitle=""
+        bgColor="bg-background"
         features={[
           {
             icon: Clock,
