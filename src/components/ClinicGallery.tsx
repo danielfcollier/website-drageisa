@@ -1,6 +1,6 @@
-import clinic1 from "@/assets/clinic-1.jpg";
-import clinic2 from "@/assets/clinic-2.jpg";
-import clinic3 from "@/assets/clinic-3.jpg";
+import clinic1 from "@/assets/clinic-1.jpeg";
+import clinic2 from "@/assets/clinic-2.jpeg";
+import clinic3 from "@/assets/clinic-3.jpeg";
 
 export const ClinicGallery = () => {
   const images = [

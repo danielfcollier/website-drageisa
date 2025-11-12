@@ -9,8 +9,8 @@ import { ClinicGallery } from "@/components/ClinicGallery";
 import { LocationSection } from "@/components/LocationSection";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Heart, Shield, Users, Clock, Stethoscope, Calendar, Award, BookOpen, GraduationCap } from "lucide-react";
-import services1 from "@/assets/services-1.jpg";
+import { Heart, Shield, Users, Clock, Stethoscope, Venus, Award, HeartPlus, GraduationCap } from "lucide-react";
+import services1 from "@/assets/services-1.jpeg";
 import services2 from "@/assets/services-2.jpg";
 
 const Index = () => {
@@ -26,12 +26,12 @@ const Index = () => {
         bgColor="bg-warm-cream"
         features={[
           {
-            icon: Heart,
+            icon: Venus,
             title: "Feminilidade Integrativa",
             description: "Honrando e integrando todos os aspectos da feminilidade em uma abordagem holística e respeitosa."
           },
           {
-            icon: Shield,
+            icon: Heart,
             title: "Fecundação e Contracepção",
             description: "Orientação consciente e individualizada sobre planejamento familiar, respeitando suas escolhas e momento de vida."
           },
@@ -46,19 +46,19 @@ const Index = () => {
             description: "Cuidado integral que vai além dos sintomas, buscando o equilíbrio e a vitalidade em todas as dimensões."
           }
         ]}
-        paragraph="Meu compromisso é oferecer um cuidado ampliado em saúde, priorizando a boa relação médica-paciente, a adoção de terapêuticas individualizadas e naturais, sempre que possível, respeitando preferências e autonomia."
+        paragraph='"Meu compromisso é oferecer um cuidado ampliado em saúde, priorizando a boa relação médica-paciente, a adoção de terapêuticas individualizadas e naturais, sempre que possível, respeitando preferências e autonomia."'
       />
       
       <IconSection 
         backgroundColor="dark"
         items={[
           {
-            icon: Heart,
+            icon: Venus,
             title: "Conexão da Feminilidade",
             description: "Reconectando você com sua essência feminina, seus ciclos naturais e seu poder interior."
           },
           {
-            icon: Shield,
+            icon: HeartPlus,
             title: "Restauração do Equilíbrio",
             description: "Recuperando o equilíbrio hormonal, emocional e energético através de abordagens integrativas."
           },
