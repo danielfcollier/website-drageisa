@@ -14,7 +14,7 @@ interface BioSectionProps {
 
 export const BioSection = ({ name, credentials }: BioSectionProps) => {
   return (
-    <section className="py-20 bg-warm-cream">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div className="text-center">

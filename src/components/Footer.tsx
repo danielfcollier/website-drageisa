@@ -1,4 +1,5 @@
-import { Heart, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -6,9 +7,11 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto mb-8 text-center">
           <div className="flex flex-col items-center gap-3 mb-6">
-            <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary-foreground">
-              <Heart className="w-8 h-8 text-primary" fill="currentColor" />
-            </div>
+            <img 
+              src={logo} 
+              alt="Logo Dra. Geisa Nery" 
+              className="w-14 h-14 object-contain brightness-0 invert"
+            />
             <div>
               <span className="text-3xl font-brand block leading-tight">Dra. Geisa Nery</span>
               <span className="text-sm font-secondary">CRM-SC 17.355 / RQE 14.561</span>

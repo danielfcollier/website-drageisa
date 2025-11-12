@@ -8,7 +8,7 @@ export const LocationSection = () => {
   const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8658831863844!2d-48.52015!3d-27.59611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273873e1b6d5c7%3A0x7e8c5a5d8a5d8a5d!2sRua%20Lauro%20Linhares%2C%202010%20-%20Trindade%2C%20Florian%C3%B3polis%20-%20SC%2C%2088036-002!5e0!3m2!1spt-BR!2sbr!4v1620000000000";
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-warm-cream">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-main text-foreground mb-4">

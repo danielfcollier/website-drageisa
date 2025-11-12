@@ -23,7 +23,7 @@ const Index = () => {
         id="sobre"
         title="Visão Sistêmica em Saúde"
         subtitle="Cuidado Terapêutico e Transpessoal da Mulher"
-        bgColor="bg-background"
+        bgColor="bg-warm-cream"
         features={[
           {
             icon: Heart,
@@ -50,6 +50,7 @@ const Index = () => {
       />
       
       <IconSection 
+        backgroundColor="dark"
         items={[
           {
             icon: Heart,
