@@ -8,7 +8,7 @@ const VamosJuntas = () => {
   const whatsappUrl = "https://api.whatsapp.com/send?phone=554899623819&text=Ol%C3%A1,%20estou%20interessada%20em%20agendar%20uma%20consulta%20com%20a%20Dra.%20Geisa.%20Me%20chamo%20&source=&data=";
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-warm-cream to-background flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#EEE6EA] flex items-center justify-center p-4">
       <div className="max-w-md w-full flex flex-col items-center gap-8 text-center">
         <img 
           src={logo} 
