@@ -29,7 +29,7 @@ export const Header = () => {
               isScrolled ? "brightness-0 invert" : ""
             }`}
           />
-          <span className={`text-2xl font-brand block leading-tight transition-colors duration-300 ${
+          <span className={`text-3xl font-brand block leading-tight transition-colors duration-300 ${
             isScrolled ? "text-primary-foreground" : "text-primary"
           }`}>
             Dra. Geisa Nery
