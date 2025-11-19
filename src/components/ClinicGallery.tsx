@@ -1,3 +1,4 @@
+import { OptimizedImage } from "@/components/OptimizedImage";
 import clinic1 from "@/assets/clinic-1.jpeg";
 import clinic2 from "@/assets/clinic-2.jpeg";
 import clinic3 from "@/assets/clinic-3.jpeg";
@@ -27,7 +28,7 @@ export const ClinicGallery = () => {
               key={index}
               className="aspect-[4/3] overflow-hidden rounded-2xl shadow-medium hover:shadow-lg transition-shadow"
             >
-              <img 
+              <OptimizedImage 
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { OptimizedImage } from "@/components/OptimizedImage";
 import doctorPhoto from "@/assets/doctor-photo.jpg";
 
 interface Credential {
@@ -18,7 +19,7 @@ export const BioSection = ({ name, credentials }: BioSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
           <div className="text-center">
-            <img 
+            <OptimizedImage 
               src={doctorPhoto}
               alt={name}
               className="w-64 h-80 object-cover rounded-2xl shadow-medium mx-auto mb-6"

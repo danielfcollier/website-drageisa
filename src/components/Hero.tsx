@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { OptimizedImage } from "@/components/OptimizedImage";
 import heroBg from "@/assets/hero-bg.jpeg";
 
 export const Hero = () => {
@@ -10,10 +11,13 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+      <div className="absolute inset-0">
+        <OptimizedImage 
+          src={heroBg}
+          alt="Hero background"
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-hero" />
       
       <div className="container mx-auto px-4 py-20 relative z-10">

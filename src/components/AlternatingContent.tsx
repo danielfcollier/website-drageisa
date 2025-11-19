@@ -1,3 +1,5 @@
+import { OptimizedImage } from "@/components/OptimizedImage";
+
 interface ContentItem {
   image: string;
   title: string;
@@ -23,7 +25,7 @@ export const AlternatingContent = ({ items }: AlternatingContentProps) => {
                 }`}
               >
                 <div className={isEven ? "" : "md:col-start-2"}>
-                  <img 
+                  <OptimizedImage 
                     src={item.image} 
                     alt={item.title}
                     className="w-full h-[400px] object-cover rounded-2xl shadow-medium"
