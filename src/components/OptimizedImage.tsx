@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-
 interface OptimizedImageProps {
   src: string;
   alt: string;
@@ -7,47 +5,16 @@ interface OptimizedImageProps {
 }
 
 export const OptimizedImage = ({ src, alt, className = '' }: OptimizedImageProps) => {
-  const [imageSrc, setImageSrc] = useState(src);
-  
-  useEffect(() => {
-    // Extract filename without extension from imported asset path
-    const filename = src.split('/').pop()?.split('.')[0] || '';
-    
-    // Check if optimized version exists
-    const checkOptimized = async () => {
-      try {
-        // Try WebP first
-        const webpMobile = `/optimized/${filename}-mobile.webp`;
-        const webpTablet = `/optimized/${filename}-tablet.webp`;
-        const webpDesktop = `/optimized/${filename}-desktop.webp`;
-        
-        // Fallback JPEG versions
-        const jpgMobile = `/optimized/${filename}-mobile.jpg`;
-        const jpgTablet = `/optimized/${filename}-tablet.jpg`;
-        const jpgDesktop = `/optimized/${filename}-desktop.jpg`;
-        
-        // Use optimized images if available
-        const response = await fetch(webpMobile, { method: 'HEAD' });
-        if (response.ok) {
-          // Create srcset for responsive images
-          const srcset = `${webpMobile} 768w, ${webpTablet} 1024w, ${webpDesktop} 1920w`;
-          const fallbackSrcset = `${jpgMobile} 768w, ${jpgTablet} 1024w, ${jpgDesktop} 1920w`;
-          
-          setImageSrc(webpDesktop);
-          
-          // Update with picture element data
-          return { srcset, fallbackSrcset };
-        }
-      } catch (error) {
-        // If optimized version doesn't exist, use original
-        console.log('Using original image:', filename);
-      }
-    };
-    
-    checkOptimized();
-  }, [src]);
+  // Extract filename and strip Vite's hash (pattern: -[hash] before extension)
+  // Examples: hero-bg-C29Yx6Yw.jpeg -> hero-bg, doctor-photo-1E5vI2wO.jpg -> doctor-photo
+  const getBaseFilename = (path: string): string => {
+    const filename = path.split('/').pop() || '';
+    const nameWithoutExt = filename.split('.')[0];
+    // Remove Vite's 8-character hash if present (pattern: -XXXXXXXX at the end)
+    return nameWithoutExt.replace(/-[A-Za-z0-9_-]{8}$/, '');
+  };
 
-  const filename = src.split('/').pop()?.split('.')[0] || '';
+  const filename = getBaseFilename(src);
 
   return (
     <picture>
@@ -62,7 +29,7 @@ export const OptimizedImage = ({ src, alt, className = '' }: OptimizedImageProps
         sizes="(max-width: 768px) 768px, (max-width: 1024px) 1024px, 1920px"
       />
       <img
-        src={imageSrc}
+        src={`/optimized/${filename}-desktop.webp`}
         alt={alt}
         className={className}
         loading="lazy"
