@@ -2,9 +2,10 @@ interface OptimizedImageProps {
   src: string;
   alt: string;
   className?: string;
+  priority?: boolean;
 }
 
-export const OptimizedImage = ({ src, alt, className = '' }: OptimizedImageProps) => {
+export const OptimizedImage = ({ src, alt, className = '', priority = false }: OptimizedImageProps) => {
   // Extract filename and strip Vite's hash (pattern: -[hash] before extension)
   // Examples: hero-bg-C29Yx6Yw.jpeg -> hero-bg, doctor-photo-1E5vI2wO.jpg -> doctor-photo
   const getBaseFilename = (path: string): string => {
@@ -32,7 +33,8 @@ export const OptimizedImage = ({ src, alt, className = '' }: OptimizedImageProps
         src={`/optimized/${filename}-desktop.webp`}
         alt={alt}
         className={className}
-        loading="lazy"
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : undefined}
       />
     </picture>
   );
