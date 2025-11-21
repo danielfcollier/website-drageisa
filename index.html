@@ -10,8 +10,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Font loading with display=swap for better UX -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- Preload LCP hero image for faster render -->
+    <link rel="preload" as="image" href="/optimized/hero-bg-desktop.webp" media="(min-width: 1025px)" type="image/webp">
+    <link rel="preload" as="image" href="/optimized/hero-bg-tablet.webp" media="(min-width: 769px) and (max-width: 1024px)" type="image/webp">
+    <link rel="preload" as="image" href="/optimized/hero-bg-mobile.webp" media="(max-width: 768px)" type="image/webp">
+    
+    <!-- Font loading with display=optional to prevent layout shifts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=optional">
+    
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 20%;
+        --primary: 328 100% 32%;
+        --primary-foreground: 0 0% 100%;
+        --accent: 45 100% 77%;
+        --cta-button: 45 85% 63%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+      #root {
+        min-height: 100vh;
+      }
+    </style>
     <title>Dra. Geisa Nery - Ginecologia Integrativa</title>
     <meta name="description" content="Visão Sistêmica em Saúde. Cuidado Terapêutico e Transpessoal da Mulher. Ginecologia Integrativa em Florianópolis." />
     <meta name="author" content="Dra. Geisa Nery" />

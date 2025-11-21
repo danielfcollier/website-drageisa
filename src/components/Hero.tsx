@@ -23,10 +23,10 @@ export const Hero = () => {
       
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-3xl">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold font-main text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-main text-primary-foreground mb-6 leading-tight">
             Uma Medicina <span className="text-accent">MAIS Humana</span> para Mulheres
           </h1>
-          <p className="text-lg md:text-2xl font-secondary text-primary-foreground/90 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl font-secondary text-primary-foreground/90 mb-8 leading-relaxed">
             Em Concordância com o Universo Feminino<br />
             - Ciclos, Potências, Dores, Lutas -
           </p>

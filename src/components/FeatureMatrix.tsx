@@ -20,9 +20,9 @@ export const FeatureMatrix = ({ title, subtitle, features, paragraph, id, bgColo
     <section id={id} className={`py-20 ${bgColor}`}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold font-main text-foreground mb-4">{title}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-main text-foreground mb-4">{title}</h2>
           {subtitle && (
-            <p className="text-base md:text-lg font-secondary text-muted-foreground">{subtitle}</p>
+            <p className="text-lg font-secondary text-muted-foreground">{subtitle}</p>
           )}
         </div>
         
