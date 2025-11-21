@@ -1,20 +1,17 @@
-import { lazy, Suspense } from "react";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { FeatureMatrix } from "@/components/FeatureMatrix";
 import { IconSection } from "@/components/IconSection";
 import { AlternatingContent } from "@/components/AlternatingContent";
 import { BioSection } from "@/components/BioSection";
+import { Testimonials } from "@/components/Testimonials";
+import { ClinicGallery } from "@/components/ClinicGallery";
+import { LocationSection } from "@/components/LocationSection";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Shield, Users, Clock, Stethoscope, Venus, Award, HeartPlus, GraduationCap } from "lucide-react";
 import services1 from "@/assets/services-1.jpeg";
 import services2 from "@/assets/services-2.jpg";
-
-// Lazy load below-the-fold components
-const Testimonials = lazy(() => import("@/components/Testimonials").then(m => ({ default: m.Testimonials })));
-const ClinicGallery = lazy(() => import("@/components/ClinicGallery").then(m => ({ default: m.ClinicGallery })));
-const LocationSection = lazy(() => import("@/components/LocationSection").then(m => ({ default: m.LocationSection })));
 
 const Index = () => {
   return (
@@ -109,22 +106,20 @@ const Index = () => {
         ]}
       />
       
-      <Suspense fallback={<div className="py-12 bg-background" />}>
-        <Testimonials 
-          testimonials={[
-            {
-              name: "Adriana Casaroto",
-              role: "Psicóloga Sênior",
-              text: "Profissional com visão integral do ser humano. Postura sensível e tecnicamente sempre atualizada ao que há de melhor, respeitando o perfil de cada cliente. Encaminho clientes, colegas e amigas - estão em boas mãos e gigante coração!"
-            },
-            {
-              name: "Fábia Lombardi",
-              role: "Terapeuta Integrativa",
-              text: "Sinto muita confiança e segurança no trabalho e na assertividade da Geisa, o que me faz ficar muito consciente e ao mesmo tempo entregue aos seus cuidados."
-            }
-          ]}
-        />
-      </Suspense>
+      <Testimonials 
+        testimonials={[
+          {
+            name: "Adriana Casaroto",
+            role: "Psicóloga Sênior",
+            text: "Profissional com visão integral do ser humano. Postura sensível e tecnicamente sempre atualizada ao que há de melhor, respeitando o perfil de cada cliente. Encaminho clientes, colegas e amigas - estão em boas mãos e gigante coração!"
+          },
+          {
+            name: "Fábia Lombardi",
+            role: "Terapeuta Integrativa",
+            text: "Sinto muita confiança e segurança no trabalho e na assertividade da Geisa, o que me faz ficar muito consciente e ao mesmo tempo entregue aos seus cuidados."
+          }
+        ]}
+      />
       
       <FeatureMatrix 
         id="como-funciona"
@@ -171,12 +166,8 @@ const Index = () => {
         </div>
       </section>
       
-      <Suspense fallback={<div className="py-12 bg-background" />}>
-        <ClinicGallery />
-      </Suspense>
-      <Suspense fallback={<div className="py-12 bg-background" />}>
-        <LocationSection />
-      </Suspense>
+      <ClinicGallery />
+      <LocationSection />
       <Footer />
     </div>
   );
