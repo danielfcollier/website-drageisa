@@ -16,7 +16,6 @@ export const Hero = () => {
           src={heroBg}
           alt="Hero background"
           className="w-full h-full object-cover"
-          priority={true}
         />
       </div>
       <div className="absolute inset-0 bg-gradient-hero" />
